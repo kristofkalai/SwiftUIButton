@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "reversemask",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stateman92/ReverseMask.git",
+      "state" : {
+        "revision" : "e915b1eb3c114a10dd867854f3fc9bffb2a47bdc",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
