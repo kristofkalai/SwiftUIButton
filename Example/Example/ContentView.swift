@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import SwiftUIButton
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Button {
+            print("The button is tapped!")
+        } label: {
+            Text("Tap me!")
         }
-        .padding()
+        .buttonStyle(BaseButtonStyle(icon: .leading(.init(systemName: "circle")),
+                                     size: .normal(cornerRadius: 15),
+                                     theme: DefaultButtonTheme()))
     }
 }
 

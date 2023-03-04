@@ -7,37 +7,35 @@
 
 import SwiftUI
 
-public final class DefaultButtonTheme {
+open class DefaultButtonTheme: ButtonTheme {
     public init() {}
-}
 
-extension DefaultButtonTheme: ButtonTheme {
-    public func contentHeight(for size: ButtonSize, state: ButtonState) -> CGFloat {
+    open func contentHeight(for size: ButtonSize, state: ButtonState) -> CGFloat {
         switch size {
         case .normal: return 32
         case .small: return 18
         }
     }
 
-    public func imageSize(for size: ButtonSize, state: ButtonState) -> CGSize {
+    open func imageSize(for size: ButtonSize, state: ButtonState) -> CGSize {
         let contentHeight = contentHeight(for: size, state: state)
         return .init(width: contentHeight, height: contentHeight)
     }
 
-    public func imagePadding(for size: ButtonSize, state: ButtonState) -> CGSize {
+    open func imagePadding(for size: ButtonSize, state: ButtonState) -> CGSize {
         let contentHeight = contentHeight(for: size, state: state)
         return .init(width: contentHeight / 2, height: contentHeight / 2)
     }
 
-    public func verticalPadding(for size: ButtonSize, state: ButtonState) -> CGFloat {
+    open func verticalPadding(for size: ButtonSize, state: ButtonState) -> CGFloat {
         8
     }
 
-    public func horizontalPadding(for size: ButtonSize, state: ButtonState) -> CGFloat {
+    open func horizontalPadding(for size: ButtonSize, state: ButtonState) -> CGFloat {
         18
     }
 
-    public func iconBackgroundColor(for size: ButtonSize, state: ButtonState) -> Color {
+    open func iconBackgroundColor(for size: ButtonSize, state: ButtonState) -> Color {
         switch state {
         case .normal, .pressed:
             return .white.opacity(0.1)
@@ -46,7 +44,7 @@ extension DefaultButtonTheme: ButtonTheme {
         }
     }
 
-    public func iconForegroundColor(for size: ButtonSize, state: ButtonState) -> Color {
+    open func iconForegroundColor(for size: ButtonSize, state: ButtonState) -> Color {
         switch state {
         case .normal, .pressed:
             return .white
@@ -55,7 +53,7 @@ extension DefaultButtonTheme: ButtonTheme {
         }
     }
 
-    public func backgroundColor(for size: ButtonSize, state: ButtonState) -> Color {
+    open func backgroundColor(for size: ButtonSize, state: ButtonState) -> Color {
         switch state {
         case .normal:
             return .primary
@@ -66,7 +64,7 @@ extension DefaultButtonTheme: ButtonTheme {
         }
     }
 
-    public func foregroundColor(for size: ButtonSize, state: ButtonState) -> Color {
+    open func foregroundColor(for size: ButtonSize, state: ButtonState) -> Color {
         switch state {
         case .normal, .pressed:
             return .white
@@ -75,12 +73,7 @@ extension DefaultButtonTheme: ButtonTheme {
         }
     }
 
-    public func font(for size: ButtonSize, state: ButtonState) -> Font {
-        switch state {
-        case .pressed:
-            return .body
-        case .normal, .disabled:
-            return .title
-        }
+    open func font(for size: ButtonSize, state: ButtonState) -> Font {
+        .body
     }
 }

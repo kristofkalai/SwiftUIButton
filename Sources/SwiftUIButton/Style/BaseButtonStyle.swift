@@ -13,7 +13,7 @@ public struct BaseButtonStyle {
     private let size: ButtonSize
     private let theme: ButtonTheme
 
-    public init(icon: ButtonIcon, size: ButtonSize, theme: ButtonTheme) {
+    public init(icon: ButtonIcon, size: ButtonSize, theme: ButtonTheme = DefaultButtonTheme()) {
         self.icon = icon
         self.size = size
         self.theme = theme

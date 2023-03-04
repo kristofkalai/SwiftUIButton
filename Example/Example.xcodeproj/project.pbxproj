@@ -14,6 +14,7 @@
 		5819170829B3C23500FC074A /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819170729B3C23500FC074A /* ExampleTests.swift */; };
 		5819171229B3C23500FC074A /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819171129B3C23500FC074A /* ExampleUITests.swift */; };
 		5819171429B3C23500FC074A /* ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819171329B3C23500FC074A /* ExampleUITestsLaunchTests.swift */; };
+		587654A029B3C31F00B04194 /* SwiftUIButton in Frameworks */ = {isa = PBXBuildFile; productRef = 5876549F29B3C31F00B04194 /* SwiftUIButton */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587654A029B3C31F00B04194 /* SwiftUIButton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				5876549F29B3C31F00B04194 /* SwiftUIButton */,
+			);
 			productName = Example;
 			productReference = 581916F329B3C23400FC074A /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 581916EA29B3C23400FC074A;
+			packageReferences = (
+				5876549E29B3C31F00B04194 /* XCRemoteSwiftPackageReference "SwiftUIButton" */,
+			);
 			productRefGroup = 581916F429B3C23400FC074A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -581,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5876549E29B3C31F00B04194 /* XCRemoteSwiftPackageReference "SwiftUIButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stateman92/SwiftUIButton";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5876549F29B3C31F00B04194 /* SwiftUIButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5876549E29B3C31F00B04194 /* XCRemoteSwiftPackageReference "SwiftUIButton" */;
+			productName = SwiftUIButton;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 581916EB29B3C23400FC074A /* Project object */;
 }

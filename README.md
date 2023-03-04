@@ -6,7 +6,14 @@ An introduction to handling SwiftUI Buttons! ⬇️
 You can use the style on a button like so:
 
 ```swift
-MaskedTabView(offset: $viewModel.offset, index: $viewModel.index, overlayColor: .red, bounces: bounces, tabs: tabs, tabView: tabView, content: content)
+Button {
+    print("The button is tapped!")
+} label: {
+    Text("Tap me!")
+}
+.buttonStyle(BaseButtonStyle(icon: .leading(.init(systemName: "circle")),
+                             size: .normal(cornerRadius: 15),
+                             theme: DefaultButtonTheme()))
 ```
 
 For details see the Example app.

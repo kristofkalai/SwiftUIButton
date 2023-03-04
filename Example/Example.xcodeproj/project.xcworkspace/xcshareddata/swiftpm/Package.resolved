@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "reversemask",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stateman92/ReverseMask.git",
+      "state" : {
+        "revision" : "e915b1eb3c114a10dd867854f3fc9bffb2a47bdc",
+        "version" : "0.0.1"
+      }
+    },
+    {
+      "identity" : "swiftuibutton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stateman92/SwiftUIButton",
+      "state" : {
+        "revision" : "1a589d6acb4b27d57a34caa6e972da668715b393",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
