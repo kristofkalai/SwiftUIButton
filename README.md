@@ -1,9 +1,17 @@
 # SwiftUIButton
 An introduction to handling SwiftUI Buttons! ⬇️
 
-### How to use
+## Setup
 
-You can use the style on a button like so:
+Add the following to `Package.swift`:
+
+```swift
+.package(url: "https://github.com/stateman92/SwiftUIButton", exact: .init(0, 0, 2))
+```
+
+[Or add the package in Xcode.](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app)
+
+## Usage
 
 ```swift
 Button {
@@ -18,6 +26,6 @@ Button {
 
 For details see the Example app.
 
-### Example
+## Example
 
 <p style="text-align:center;"><img src="https://github.com/stateman92/SwiftUIButton/blob/main/Resources/screenshot.png?raw=true" width="50%" alt="Example"></p>
